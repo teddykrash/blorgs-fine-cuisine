@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+:root {
+    --bg-cream: #f5f0e8;
+    --card-bg: #ffffff;
+    --card-border: #d4c5a9;
+    --heading-color: #8b3a3a;
+    --item-name: #2c2c2c;
+    --item-price: #8b3a3a;
+    --desc-color: #6b6b6b;
+    --combo-color: #5a7d4c;
+}
+
+body {
+    background-color: var(--bg-cream);
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--item-name);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0 10px;
+}
+.menu-logo {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 1200px;
+    height: auto;
+}
+header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.4rem;
+    color: var(--heading-color);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 15px 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 25px 20px;
+    margin: 0 auto 25px;
+    max-width: 700px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+}
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--card-border);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.menu-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--item-name);
+}
+
+.item-price {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--item-price);
+    white-space: nowrap;
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: var(--desc-color);
+    margin-top: 4px;
+    line-height: 1.4;
+}
+.food-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--card-border);
+}
+
+li:last-child {
+    border-bottom: none;
+}
